@@ -1,0 +1,195 @@
+body{
+    margin: 0px;
+    
+}
+section{
+    height:100vh;
+    width: 100%;
+    background-image: url(18493522_6011696.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    
+    
+}
+
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    margin:0px;
+
+}
+header{
+    height: 130px;
+    width: 100%;
+    padding-bottom: 0px;
+    font-family: Allerta Stencil , sans-serif;
+    
+}
+
+.box img{
+    height:125px;
+    margin: 10px;
+    
+}
+
+
+.box img:active{
+    border-color: white;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+ul li{
+    margin:20px;
+    font-size: 20px;
+    border:2px solid black;
+    padding:5px;
+    border-radius: 20px;
+}
+
+
+ul li:hover{
+    border:3px double black;
+    padding:5px;
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
+.sm{
+    margin-top:45px;
+    margin-right: 20px;
+}
+.sm a{
+    color: black;
+    font-size: 20px;
+    padding:8px
+}
+.sm a:hover{
+   
+    border:2px solid black;
+    padding:10px;
+    border-radius: 200px;
+    
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin:50px;
+    height: 450px;
+
+}
+
+.main img{
+    width: 450px;
+    height: 500px;
+    border:8px double black;
+    border-radius: 90px;
+}
+.main .abcd{
+    text-align: left;
+    font-size: 25px;
+    position: relative;
+    top:140px;
+    height: 250px;
+    margin-left: 50px;
+    margin-right: 20px;
+    width: 1500px;
+}
+
+
+.abcd h3{
+    margin:0px;
+    padding: 0px;
+    font-size: 35px;
+}
+.abcd h1{
+    margin:0px;
+    padding: 0px;
+    font-size: 70px;
+    font-family: Arizonia, sans-serif;
+}
+.abcd p{
+    margin:0px;
+    padding: 0px;
+    margin:0px
+}
+
+
+
+
+footer {
+
+    background-image: url(ff.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:215px;
+    
+
+}
+
+
+
+.lmn i{
+    font-size: 25px; 
+}
+.lmn{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding-top: 20px;
+    align-items: center;
+
+}
+
+.foot .about{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    font-size: 20px;
+    padding-top: 40px;
+
+}
+
+.foot .bottom{
+    position: relative;
+    top:80px;
+}
+
+.about div:hover{
+    text-decoration: underline;
+
+}
+
+.lmn i:hover{
+    border:2px solid black;
+    align-items: center;
+    border-radius: 5px;
+    padding:2px
+}
+
+
+
+    
+@media screen and (max-width:1381) {
+    .container .sm{
+        display:none;
+        color: red;
+    }
+    
+}
