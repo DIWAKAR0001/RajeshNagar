@@ -60,35 +60,70 @@
         top:15px;
     }
 
+    @media (max-width: 1440px) {
+            .nav-bar li a {
+                font-size: 0.875rem; /* Smaller font size for smaller screens */
+            }
+            .writing h1 {
+                font-size: 1.5rem; /* Smaller font size for smaller screens */
+            }
+            .writing p {
+                font-size: 1rem; /* Smaller font size for smaller screens */
+            }
+            .div1 img {
+                width: 100%;
+                max-width: 250px;
+            }
+            .div1{
+                height: 90%;
+                overflow: auto;
+            }
+            #sec{
+                height: 50%;
+                overflow: auto;
+                margin-top: 0px;
+            }
+        }
+
+        @media (max-width: 786px) {
+            #sec{
+                height: 35%;
+                overflow: auto;
+                margin-top: 0px;
+            }
+
+            .div1{
+                height: 95%;
+                overflow: auto;
+            }
+        }
+
+        
+
 </style>
 
 <body>
     <section>
         <header>
-            <div class="container">
-                <div class="box">
-                    <a href="index.html"> <img src="RN__2_-removebg-preview.png"></a>
-                </div>
-                <div class="menu">
-                    <ul>
+            <nav>
+                <ul class='nav-bar'>
+                    <li class='logo'><a href='index.html'><img src="divu.png"/></a></li>
+                    <input type='checkbox' id='check' />
+                    <span class="menu">
                         <li><a href="index.html" target="_self">Home</a></li>
-                        <li><a href="gallery.html" target="_self">Gallery</a></li>
+                        <li><a href="gallery.html" target="_self"> Gallery</a></li>
                         <li><a href="activity.html" target="_self">Activities</a></li>
                         <li><a href="accolades.html" target="_self">Accolades</a></li>
                         <li><a href="writing.html" target="_self">Writings</a></li>
                         <li><a href="cpc.html" target="_self" style="font-family: Tiro Devanagari Hindi;">चाय पर चर्चा</a></li>
                         <li><a href="kc.html" target="_self">Knowledge Center</a></li>
 
-
-                    </ul>
-                </div >
-                <div class="sm">
-                    <a href="const.html" target="_self" class="question" title="Support"><i class="fa-regular fa-question"></i></a>
-                    <a href="const.html" target="_self" class="globe" title="Community"><i class="fa-solid fa-globe"></i></i></a>
-                    <a href="const.html" target="_self" class="user" title="Account"><i class="fa-solid fa-user"></i></a>
-                </div>
-            </div>
-        </header>
+                        <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
+                </ul>
+            </nav>
+            </header>
 
         <div class="writing">
             <h1><i class="fa-solid fa-trophy"></i><b> Our Achievements</b></h1>
@@ -98,7 +133,7 @@
             </p>
         </div>
 
-        <div class="div1">
+        <div class="div1" id="sec">
             <img src="a44.jpg" alt="">
             <img src="a26.jpg" alt="">
             <img src="a39.jpg" alt="">

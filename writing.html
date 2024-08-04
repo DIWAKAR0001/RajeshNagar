@@ -18,81 +18,120 @@
 
 
 <style>
-    .writing{
-        margin:35px;
-        border:3px double black;
-        border-radius: 20px;
-        padding:8px
-    }
-    .writing h1{
-        font-size: 30px;
-    }
-    .writing p{
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .div1{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        text-align: center;
-        
-    }
-    .div1 h1{
-        font-size: 40px;
-    }
-    .div1 pre{
-        font-size: 15px;
-        padding: 5px;
-    }
-
-    .div1 p{
-        text-align: right;
-        padding-right: 35px;
+    body {
+        margin:0px;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     
-
-    .div1{
-        margin:200px;
-        margin-top:0px;
-        border:4px solid black;
+    
+    
+    .writing {
+        margin: 35px;
+        border: 3px double black;
         border-radius: 20px;
-        padding:15px;
+        padding: 8px;
+        text-align:left  }
+    .writing h1 {
+        font-size: 2rem; /* Responsive font size */
+    }
+    .writing p {
+        font-size: 1.25rem; /* Responsive font size */
+        
+    }
+    .div1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        border: 4px solid black;
+        border-radius: 20px;
+        padding: 15px;
         background-color: white;
         position: relative;
-        top:30px;
     }
+    .div1 h1 {
+        font-size: 2.5rem; /* Responsive font size */
+        text-align: center;
+    }
+    .div1 pre {
+        font-size: 1rem; /* Responsive font size */
+        padding: 5px;
+        text-align: center;
+        white-space: pre-wrap; /* Ensure line breaks are preserved */
+    }
+    .div1 p{
+        font-size: 1rem; 
+    }
+    @media (max-width: 768px) {
+        .nav-bar li a {
+            font-size: 0.875rem; /* Smaller font size for smaller screens */
+        }
+        .writing h1 {
+            font-size: 1.5rem; /* Smaller font size for smaller screens */
+        }
+        .writing p {
+            font-size: 1rem; /* Smaller font size for smaller screens */
+        }
+        .div1 h1 {
+            font-size: 1.75rem; /* Smaller font size for smaller screens */
+        }
+        .div1 pre {
+            font-size: 0.875rem; /* Smaller font size for smaller screens */
+        }
+        .div1 p {
+            font-size: 0.875rem; /* Smaller font size for smaller screens */
+        }
+    }
+    @media (max-width: 434px) {
+        .div1{
+            height: 95%;
+            overflow:auto
+        }
+        #sec{
+            height: 45%;
+            overflow:auto
+
+        }
+
+    }
+    @media (max-width: 320px) {
+        
+        #sec{
+            height: 35%;
+            overflow:auto
+
+        }
+
+    }
+
+
+
 
 </style>
 
 <body>
     <section>
         <header>
-            <div class="container">
-                <div class="box">
-                    <a href="index.html"> <img src="RN__2_-removebg-preview.png"></a>
-                </div>
-                <div class="menu">
-                    <ul>
+            <nav>
+                <ul class='nav-bar'>
+                    <li class='logo'><a href='index.html'><img src="divu.png"/></a></li>
+                    <input type='checkbox' id='check' />
+                    <span class="menu">
                         <li><a href="index.html" target="_self">Home</a></li>
-                        <li><a href="gallery.html" target="_self">Gallery</a></li>
+                        <li><a href="gallery.html" target="_self"> Gallery</a></li>
                         <li><a href="activity.html" target="_self">Activities</a></li>
                         <li><a href="accolades.html" target="_self">Accolades</a></li>
                         <li><a href="writing.html" target="_self">Writings</a></li>
                         <li><a href="cpc.html" target="_self" style="font-family: Tiro Devanagari Hindi;">चाय पर चर्चा</a></li>
                         <li><a href="kc.html" target="_self">Knowledge Center</a></li>
 
-
-                    </ul>
-                </div >
-                <div class="sm">
-                    <a href="const.html" target="_self" class="question" title="Support"><i class="fa-regular fa-question"></i></a>
-                    <a href="const.html" target="_self" class="globe" title="Community"><i class="fa-solid fa-globe"></i></i></a>
-                    <a href="const.html" target="_self" class="user" title="Account"><i class="fa-solid fa-user"></i></a>
-                </div>
-            </div>
-        </header>
+                        <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
+                </ul>
+            </nav>
+            </header>
 
         <div class="writing">
             <h1> <i class="fa-solid fa-pen"></i> Writings
@@ -107,7 +146,7 @@
                 
         </div>
 
-        <div class="div1" style="font-family:Tiro Devanagari Hindi , sans-serif; flex-direction: column; background-color: white;">
+        <div class="div1" id="sec" style="font-family:Tiro Devanagari Hindi , sans-serif; flex-direction: column; background-color: white;">
             <h1>.<u>आईसोलेशन</u>.</h1>
                 
             
